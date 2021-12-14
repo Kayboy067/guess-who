@@ -17,9 +17,9 @@ function render(people){
     Click on: ${randomPerson}
     </h2>`);
     // Render all profile pictures to DOM with attribute name to link with random person
-    for(let staff of people){
-        $('body').append(`<div class="picturesDiv" data-name="${staff.name}">
-       <img src="https://github.com/${staff.githubUsername}.png?size=250" alt="Profile image of ${staff.name}"></img>
+    for(let person of people){
+        $('body').append(`<div class="picturesDiv" data-name="${person.name}">
+       <img src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of ${person.name}"></img>
         </div>`)
     };
 } // end function render
